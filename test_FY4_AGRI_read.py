@@ -8,6 +8,7 @@ ds = xr.open_dataset(nc_path)
 b1_dn = ds['Channel01'].values
 b1_array = numpy.array(b1_dn)
 print(b1_array.max())
+real_data = b1_array/10000.
 
 # # HDF
 # hdf_path = r'D:\PhD_Workspace\FY4_H8_WS\20230427\FY4A-_AGRI--_N_DISK_1047E_L1-_FDI-_MULT_NOM_20220624000000_20220624001459_1000M_V0001.HDF'
